@@ -1,5 +1,5 @@
 #!/bin/sh
-
+ 
 
 ##	                                                                       
 ##	                            FANCY BASH PROMPT                          
