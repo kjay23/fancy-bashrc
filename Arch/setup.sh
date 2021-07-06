@@ -40,18 +40,17 @@ cp -i ~/.bashrc ~/Desktop/bashrc-backups/
 echo ""
 sleep 2
 echo ""
-echo "Retrieving res file..."
-sleep 1
-echo ""
-wget https://raw.githubusercontent.com/kjay23/fancy-bashrc/master/res 2> /dev/null
-cat res > /tmp/res
 
 echo "Configuring .bashrc file..."
 cat /home/$USER/Desktop/bashrc-backups/*.bak > /tmp/bashrcfile | cat /tmp/res >> /tmp/bashrcfile
 sleep 2
 echo ""
 echo "Replacing new .bashrc file..."
-
+echo "Retrieving res file..."
+sleep 1
+echo ""
+wget https://raw.githubusercontent.com/kjay23/fancy-bashrc/master/res 2> /dev/null
+cat res > /tmp/res
 rm ~/.bashrc
 mv /tmp/bashrcfile ~/.bashrc
 sleep 3

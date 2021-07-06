@@ -39,7 +39,7 @@ sleep 2
 
 echo ""
 echo "Restoring original file..."
-mv /home/$USER/Desktop/bashrc-backups/.bashrc ~/
+mv /home/$USER/Desktop/bashrc-backups/* ~/
 echo ""
 sleep 2
 
